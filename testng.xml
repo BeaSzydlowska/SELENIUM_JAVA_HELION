@@ -1,0 +1,67 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="test1" verbose="1">
+    <test name="Helion Account Test" preserve-order="true" enabled="false">
+        <classes>
+            <class name="AccountTest">
+                <methods>
+                    <include name="loginValidUser"/>
+                    <include name="logoutUser"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Helion Search Test" enabled="false">
+        <classes>
+            <class name="SearchTest">
+                <methods>
+                    <include name="searchingNonExistingProduct"/>
+                    <include name="searchingByTitle"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Helion Cart Test" enabled="true">
+        <classes>
+            <class name="CartTest">
+                <methods>
+<!--                    <include name="searchingByTitle"/>-->
+                    <include name="addMultipleProductsToCart"/>
+                    <include name="removeSelectedProductFromCart"/>
+                    <include name="removeAllProductFromCart"/>
+
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
+
+
+
+
+
+
+
+
+<!--<test name="Helion Register Test" preserve-order="true" enabled="true">-->
+<!--&lt;!&ndash;        <parameter name="email" value="jakisemail1@email.com"></parameter>&ndash;&gt;-->
+<!--&lt;!&ndash;        <parameter name="passwd" value="haslo1234" />&ndash;&gt;-->
+<!--        <classes>-->
+<!--            <class name="AccountTest">-->
+<!--&lt;!&ndash;                <methods>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <include name="registerUserTest"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <include name="logoutUser"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                </methods>&ndash;&gt;-->
+<!--            </class>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="Helion LoginUser Test" preserve-order="true" enabled="false">-->
+<!--        <classes>-->
+<!--            <class name="AddressBookTest">-->
+<!--                <methods>-->
+<!--                    <include name="loginRegisteredUser"/>-->
+<!--                    <include name="logoutUser"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--</suite>-->
