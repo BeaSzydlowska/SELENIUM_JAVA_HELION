@@ -37,12 +37,13 @@ public class CartPage {
      * @return tytuł
      */
     public String getProductTitle() {
-        for (WebElement row : rows) {
-            WebElement title = row.findElement(By.xpath("td[@class='desc']//h2/a"));
+        return rows.get(0).findElement(By.xpath("td[@class='desc']//h2/a")).getText();
+//        for (WebElement row : rows) {
+//            WebElement title = row.findElement(By.xpath("td[@class='desc']//h2/a"));
 //            Reporter.log(title.getText(), true);
-            return title.getText();
-        }
-        return null;
+//            return title.getText();
+//        }
+//        return null;
     }
 
     /**

@@ -43,7 +43,7 @@ public class CartTest {
     }
 
 
-    @Test(enabled = true)
+    @Test(enabled = false)
     public void searchingByTitle() {
         try {
             CSVReader reader = new CSVReader(new FileReader("./src/test/java/data/titles.csv"));
