@@ -1,6 +1,6 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="test1" verbose="1">
-    <test name="Helion Account Test" preserve-order="true" enabled="false">
+    <test name="Helion Account Test" preserve-order="true" enabled="true">
         <classes>
             <class name="AccountTest">
                 <methods>
@@ -10,7 +10,7 @@
             </class>
         </classes>
     </test>
-    <test name="Helion Search Test" enabled="false">
+    <test name="Helion Search Test" enabled="true">
         <classes>
             <class name="SearchTest">
                 <methods>
@@ -24,10 +24,10 @@
         <classes>
             <class name="CartTest">
                 <methods>
-<!--                    <include name="searchingByTitle"/>-->
+                    <include name="searchingByTitle"/>
                     <include name="addMultipleProductsToCart"/>
-<!--                    <include name="removeSelectedProductFromCart"/>-->
-<!--                    <include name="removeAllProductFromCart"/>-->
+                    <include name="removeSelectedProductFromCart"/>
+                    <include name="removeAllProductFromCart"/>
 
                 </methods>
             </class>
