@@ -43,27 +43,6 @@ public class CartTest {
     }
 
 
-    @Test(enabled = true)
-    public void searchingByTitle() {
-        try {
-            CSVReader reader = new CSVReader(new FileReader("./src/test/java/data/titles.csv"));
-            String[] nextLine;
-            while ((nextLine = reader.readNext()) != null) {
-                String productTitle = nextLine[0];
-                homePage = new HomePage(driver);
-                searchPage = homePage.searchProduct(productTitle);
-                Assert.assertTrue(searchPage.searchResultsIsNotEmpty(), "There is no product on a list");
-                productPage = searchPage.chooseProductFromListByIndex(0);
-                Assert.assertTrue(productPage.getProductTitle().contains(productTitle));
-                utils.goToHomePage();
-            }
-
-        } catch (IOException | CsvValidationException ex) {
-            System.out.println(ex.getMessage());
-        }
-
-    }
-
 
     @Test(enabled = true)
     public void addMultipleProductsToCart() {
@@ -74,7 +53,6 @@ public class CartTest {
             CSVReader reader = new CSVReader(new FileReader("./src/test/java/data/multiple_products.csv"));
             String[] nextLine;
             while ((nextLine = reader.readNext()) != null) {
-//                List<String> productsList = new ArrayList<>();
                 for (int i = 0; i < nextLine.length; i++) {
                     productsList.add(nextLine[i]);
                 }

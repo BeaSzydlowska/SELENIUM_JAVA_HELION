@@ -24,7 +24,6 @@
         <classes>
             <class name="CartTest">
                 <methods>
-                    <include name="searchingByTitle"/>
                     <include name="addMultipleProductsToCart"/>
                     <include name="removeSelectedProductFromCart"/>
                     <include name="removeAllProductFromCart"/>
@@ -42,26 +41,4 @@
 
 
 
-<!--<test name="Helion Register Test" preserve-order="true" enabled="true">-->
-<!--&lt;!&ndash;        <parameter name="email" value="jakisemail1@email.com"></parameter>&ndash;&gt;-->
-<!--&lt;!&ndash;        <parameter name="passwd" value="haslo1234" />&ndash;&gt;-->
-<!--        <classes>-->
-<!--            <class name="AccountTest">-->
-<!--&lt;!&ndash;                <methods>&ndash;&gt;-->
-<!--&lt;!&ndash;                    <include name="registerUserTest"/>&ndash;&gt;-->
-<!--&lt;!&ndash;                    <include name="logoutUser"/>&ndash;&gt;-->
-<!--&lt;!&ndash;                </methods>&ndash;&gt;-->
-<!--            </class>-->
-<!--        </classes>-->
-<!--    </test>-->
-<!--    <test name="Helion LoginUser Test" preserve-order="true" enabled="false">-->
-<!--        <classes>-->
-<!--            <class name="AddressBookTest">-->
-<!--                <methods>-->
-<!--                    <include name="loginRegisteredUser"/>-->
-<!--                    <include name="logoutUser"/>-->
-<!--                </methods>-->
-<!--            </class>-->
-<!--        </classes>-->
-<!--    </test>-->
-<!--</suite>-->
+
